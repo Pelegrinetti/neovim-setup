@@ -2,6 +2,7 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd("set number")
 
 -- NeoVim settings...
 vim.g.mapleader = " "
@@ -24,4 +25,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 vim.cmd.colorscheme "catppuccin"
-
+vim.opt.termguicolors = true
